@@ -2,8 +2,8 @@
 # E-Commerce Platform
 The E-Commerce Platform is a full-fledged online marketplace built using the MERN stack, designed to provide a seamless shopping experience for both customers and sellers. This e-commerce website allows users to browse a wide range of products, add them to their cart, and make secure purchases. Sellers can register, list their products, and manage their online stores.
 ## Team members
-1. Karthik S [https://github.com/whitewolf3K]
-2. Richard S [https://github.com/richardshaju]
+1. [Karthik S](https://github.com/whitewolf3K)
+2. [Richard S](https://github.com/richardshaju)
 ## Team Id
 mavericks-
 ## Link to product walkthrough
