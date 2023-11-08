@@ -1,0 +1,125 @@
+<section>
+  <div class="login">
+      <div class="box"
+        >
+        <h2 class="text-center mb-3 pb-5">Login</h2>
+        <form action="/login" method="post" enctype="multipart/form-data" id="login">
+          {{#if loginErr}}
+          <p class="error" style="color: red;"> {{loginErr}}</p>
+          {{/if}}
+          <!-- Email input -->
+          <div class="form-outline mb-4" 
+   >
+            <input type="email" id="form2Example1" class="form-control" placeholder="Email" name="Email"required />
+
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4" >
+            <input type="password" id="form2Example2" class="form-control" placeholder="Password" name="Password"required />
+
+          </div>
+
+          <!-- 2 column grid layout for inline styling -->
+          <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+              <!-- Checkbox -->
+            </div>
+          </div>
+          <div class="row row-but" style="">
+            <!-- Submit button -->
+            <button type="submit" class="but btn btn-primary btn-block mb-4" style="">Log in</button>
+          </div>
+          <!-- Register buttons -->
+          <div class="text-center">
+            <p>Not a member? <a href="/signup">Create new account</a></p>
+          </div>
+        </form>
+      </div>
+
+
+    
+
+    <a type="submit" href="admin/login" target="_blank" class="ad btn btn-dark btn-block">ADMIN MODE</a>
+  </div>
+  <footer >
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    &copy;
+    <script type="text/javascript">
+      var today = new Date()
+      var year = today.getFullYear()
+      document.write(year)
+    </script>
+    <a class="text-black">CARTMAX</a>
+  </div>
+</footer>
+</section>
+
+<style>
+
+  .login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+  }
+  .login .box{
+    margin-top: 5rem;
+    width: 60%;
+    border: ridge;
+    border-width: thin;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 38px 0 rgb(0 0 0 / 30%);
+  }
+  .login form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login button{
+    width: 6rem;
+  }
+  .login input{
+    max-width: 20rem;
+  }
+  .login a{
+    margin-top: 2rem;
+    width: 10rem;
+  }
+  @media screen and (max-width: 425px) {
+    .login .box{
+      width: 95%;
+    }
+  }
+ 
+
+</style>
+
+<script>
+//  $("login").submit((e)=>{
+//        e.preventDefault()
+//        $.ajax({
+//            url:'/login',
+//            method:'post',
+//            data:$('#login').serialize(),
+//            success:(response)=>{
+//                    if (response.status) {
+//                         req.session.loggedIn = true
+//                         req.session.user = response.user
+//                          location.href = '/'
+//                    } else {
+//                      req.session.loginErr = "Invalid username or password"
+//                      
+//                    }
+//            }
+//        })
+//    })
+//</script>
