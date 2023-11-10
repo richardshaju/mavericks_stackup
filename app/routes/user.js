@@ -1,6 +1,5 @@
 var express = require('express');
 const { response } = require('../app');
-const adminHelpers = require('../Helpers/admin-helpers');
 var router = express.Router();
 var productHelper = require('../Helpers/product-helpers');
 const userHelpers = require('../Helpers/user-helpers');
@@ -24,7 +23,7 @@ router.get('/', async function (req, res, next) {
   } else {
   }
   let values = ["Mobiles", "Laptops", "Electronics", "Appliances", "Camera", "Home", "Toys", "Fashion", "Shoes", "Babies", "Books", "Sports"]
-  res.render('./user/index', { user: true, user, cartCount, pageName: "Cartmax", values });
+  res.render('./user/index', { userTrue: true, user, cartCount, pageName: "Swiftcart", values });
   //console.log(values.slice(0,1))
 
 });
@@ -156,8 +155,9 @@ router.get('/orders', verifyLogin, async (req, res) => {
 
 router.get('/view-order-products/:id', async (req, res) => {
   let products = await userHelpers.getOrderProducts(req.params.id)
-  res.render('user/view-order-products', { products, user: req.session.user ,pageName: "Ordered Products" })
+  res.render('user/view-order-products', { cart:true, products, user: req.session.user ,pageName: "Ordered Products" })
 })
+
 router.post('/verify-payment', (req, res) => {
   console.log(req.body);
   userHelpers.verifyPayment(req.body).then(() => {
@@ -182,7 +182,7 @@ router.get('/products/:id', async (req, res) => {
   } else if (req.params.id == "Fashion") {
     fashion = true
   }
-  res.render('user/products', { laptop, fashion, products, cartCount, user: req.session.user, cart: true, pageName: "Products" })
+  res.render('user/products', { laptop, fashion, products, cartCount, user: req.session.user, productTrue: true, pageName: "Products" })
 })
 router.post('/cancel-order', async (req, res) => {
   await userHelpers.cancelOrder(req.body).then((response) => {

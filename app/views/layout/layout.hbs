@@ -45,16 +45,18 @@
 <body>
   {{#if admin}}
     {{>admin-header}}
-  {{else if user}}
-      {{>user-header}}
+  {{else if productTrue}}
+      {{>product-header}}
   {{else if cart}}
       {{>cart-header}}
-  {{else if signup}}
-      {{>login-header}}
   {{else if order}}
       {{>order-header}}
+  {{else if userTrue}}
+      {{>user-header}}
+  {{else if signup}}
+      {{>login-header}}
   {{else}}
-  {{>user-header}}
+  {{>cart-header}}
   {{/if}}
   {{{body}}}
 

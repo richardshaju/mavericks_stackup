@@ -36,7 +36,7 @@
 {{#if nullCart}}
 <h1 style="padding-bottom: 16rem;">{{nullCart}}</h1>
 {{else}}
-<div class="order-page" style="background-color:#E5E4E2  ;margin-top: 3rem;">
+<div class="order-page" style="background-color:#1e1e1e  ;margin-top: 3rem;">
   <section class="pt-5 mt-5 ">
     <div class="mt-5 contnr ">
       <div class="row" style=" ">
@@ -60,9 +60,7 @@
                 </strong>
               </div>
               <div class="column_2">
-                <div class="view" style="">
-                  <a class=" cardbut btn btn-primary" href="/view-order-products/{{this._id}}">View Products</a>
-                </div>
+                
                 <div class="" style="color:#fff;">
                   {{#if this.placed}}
                    <a class="cardbut btn btn-danger " onclick="cancelOrder('{{this._id}}')">Cancel</a>
@@ -85,14 +83,14 @@
   </section>
   <footer >
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-3" style="background-color: #000; color:white">
     &copy;
     <script type="text/javascript">
       var today = new Date()
       var year = today.getFullYear()
       document.write(year)
     </script>
-    <a class="text-black">CARTMAX</a>
+    <a class="text-black">Swiftcart</a>
   </div>
 </footer>
 </div>
@@ -305,7 +303,8 @@
     margin-left: auto;
     height: 309px;
     width: 449px;
-
+    color: #fff;
+    background-color: black;
     font-size: 83%
   }
 

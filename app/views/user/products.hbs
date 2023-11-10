@@ -13,7 +13,7 @@
 </style>
 
 {{#if laptop}}
-<section class="">
+<section style="background-color: #1e1e1e;">
   <div class="  pt-5 mt-5">
     <div class="row">
       {{#each products}}
@@ -45,10 +45,10 @@
   </div>
 </section>
 {{else if fashion}}
-<section>
+<section style="background-color: #1e1e1e;">
   <style>
     .fashion{
-    margin-top: 7rem;
+    margin-top: 4rem;
     width: 100%;
     min-height: 50rem;
     flex-flow: wrap;
@@ -75,7 +75,7 @@
   </div>
 </section>
 {{else}}
-<section>
+<section style="background-color: #1e1e1e;">
   <div class="  pt-5 mt-5">
     <div class="row">
       {{#each products}}
@@ -110,14 +110,14 @@
 {{/if}}
 <footer>
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-3" style="background-color: #000; color:white">
     &copy;
     <script type="text/javascript">
       var today = new Date()
       var year = today.getFullYear()
       document.write(year)
     </script>
-    <a class="text-black">CARTMAX</a>
+    <a class="text-black">Swiftcart</a>
   </div>
 </footer>
 <script>
@@ -284,6 +284,7 @@
   .card {
     height: 14.5rem;
     width: 21.5rem;
+    
   }
 
   @media (min-width:768px) {

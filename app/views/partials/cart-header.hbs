@@ -1,6 +1,6 @@
 <header class="header " style="position: fixed;width: 100%;z-index:2">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href="/">Cartmax</a>
+  <nav class="navbar navbar-expand-lg ">
+    <a  href="/"><img class="navbar-brand"  src="images/logo.jpg" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
@@ -9,7 +9,13 @@
     </button>
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mb-2 mb-lg-0" >
-       
+         <li class="nav-item mr-5">
+          <a class="nav-link" style="color: rgb(133, 132, 132);" href="/cart">Cart <span class="badge badge-info" id="cartCount">{{cartCount}}</span></a>
+        </li>
+      
+        <li class="nav-item mr-5">
+          <a class="nav-link" href="/orders">Orders</a>
+        </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown ">
@@ -17,7 +23,7 @@
             aria-haspopup="true" aria-expanded="false">
             
             {{#if user}}
-            <span style="    padding-right: 6px;"><i class="fa fa-user-circle" style="font-size:24px"></i></span><strong>{{user.Name}}</strong>
+            <span style="padding-right: 6px;"><i class="fa fa-user-circle" style="font-size:24px"></i></span><strong>{{user.Name}}</strong>
             {{else}}
             <span><i class="fa fa-user-circle" style="font-size:24px"></i></span> Account
             {{/if}}
@@ -45,12 +51,14 @@
   }
   a {
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-weight: 500;
   }
 
   a:hover {
-    color: #000;
+    color: #dfd0d0;
+    text-decoration: none;
+
   }
 
   ul {
@@ -58,20 +66,19 @@
   }
 
   .navbar {
-    background: #fff;
+    background: #000000;
     padding: 3rem, 2rem;
     min-height: 10vh;
     max-height: none;
+    color: white;
   }
 
   .navbar-brand {
-    font-family: pacifico, sans-serif;
-    font-size: 2.5rem;
-
+    width: 16rem;
   }
 
   .navbar-toggler {
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     border: none;
     padding: 10px 6px;
     outline: none;
@@ -82,7 +89,7 @@
     width: 25px;
     height: 2px;
     border: 1px;
-    background:#000;
+    background:#ffffff;
   }
 
   .navbar-toggler span+span {
