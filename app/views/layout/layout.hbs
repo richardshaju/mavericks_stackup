@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.typekit.net/pfx1znz.css">
+  <script src="https://kit.fontawesome.com/e3afdd34c7.js" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
@@ -54,6 +55,8 @@
   {{else if userTrue}}
       {{>user-header}}
   {{else if signup}}
+      {{>login-header}}
+  {{else if login}}
       {{>login-header}}
   {{else}}
   {{>cart-header}}
