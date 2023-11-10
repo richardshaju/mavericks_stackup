@@ -5,6 +5,7 @@ The E-Commerce Platform is a full-fledged online marketplace built using the MER
 =======
 1. [Karthik S](https://github.com/whitewolf3K)
 2. [Richard S](https://github.com/richardshaju)
+3. [V Gopalakrishnan](https://github.com/gopalkrishnan2005)
 
 ## Team Id
 mavericks-
