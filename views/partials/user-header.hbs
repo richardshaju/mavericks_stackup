@@ -1,0 +1,177 @@
+<header class="header">
+    <nav>
+        <div class="left">
+            <a  href="/"><img class="logo" src="images/logo.jpg" alt=""></a>
+            <h1>RETAIL <span style="color: rgb(193 109 255);">REVOLUTION</span> UNLEASHED.</h1>
+            <h2>Shop the World in Your Pocket: Discover, Click, and Slay!</h2>
+            <p>Unleash Your Shopping Desires with Swiftcart! Explore a world of fashion, tech, and everything in between, all at your fingertips. Our app is your gateway to a seamless shopping experience, where every click leads to a world of endless possibilities. Get ready to shop, save, and elevate your lifestyle, all in one place.</p>
+        </div>
+        <div class="right">
+          <div class="options">
+
+            {{#if login}}
+        {{else}}
+       
+          <a  href="#products">Products <span class="sr-only">(current)</span></a>
+          <a  href="/cart">Cart {{#if cartCount }}<span class="badge badge-info" id="cartCount">{{cartCount}}{{/if}}</span></a>
+        {{#if user}}
+          <a  href="/orders">Orders</a>
+        {{/if}}
+          <a  href="#contact">Contact</a>
+             {{#if user}}
+                <a href="/login"><i class="fas fa-user"></i>{{user.Name}}</a>
+            {{else}}
+              <a href="/login"><i class="fas fa-user"></i> Login/Sigin</a>
+            {{/if}}
+          </a>
+        </div>
+          <img class="girl-image" src="images/girl.png" alt="">
+          </div>
+        
+        
+        {{!-- <div class="navbar-login">
+          <a href="">
+             {{#if user}}
+                <a href="/profile"><i class="fas fa-user"></i>{{user.Name}}</a>
+
+            {{else}}
+              <a href="/login"><i class="fas fa-user"></i> Login/Sigin</a>
+            {{/if}}
+          </a>
+        </div> --}}
+    </nav>
+
+        
+
+    
+      
+      {{/if}}
+    </div>
+</header>
+
+<style>
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: rgb(193 109 255);
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  nav {
+   background: #000;
+   height: 40rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 4rem;
+
+  }
+
+  nav .left {
+    width: 50%;
+
+  }
+
+  nav .right {
+    width: 50%;
+    text-align: center;
+  }
+  .logo{
+    width: 17rem;
+  }
+
+  nav .left h1{
+    margin-top: 4rem;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  nav .left h2{
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  nav .right .options{
+    text-align: right;
+  }
+  nav .right img{
+
+  }
+  nav .options a {
+    margin-right : 1rem;
+  }
+  .girl-image{
+    margin-top: 5rem;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    width: 20rem;
+  }
+  
+ nav .left p {
+    color: #bfb9ae;
+    margin-top: 3rem;
+    font-family: math;
+ }
+
+   @media screen and (max-width: 831px) {
+    nav .left p {
+    visibility: hidden;
+ }
+   }
+   @media screen and (max-width: 785px) {
+     .logo{
+    width: 12rem;
+  }
+     nav .right img{
+    width: 15rem;
+  }
+   nav {
+   padding: 3rem;
+   height: 30rem;
+  }
+ nav .left h1{
+    
+    font-size: 35px;
+  }
+  nav .left h2{
+    font-size: 20px;
+  }
+   }
+
+
+  @media screen and (max-width: 584px) {
+    .logo{
+    width: 9rem;
+  }
+     nav .right img{
+    visibility: hidden;
+  }
+  nav {
+   display: flex;
+   flex-direction: column;
+
+  }
+  nav .left{
+    height: 40px;
+  }
+  nav .right{
+    width: 100%;
+    text-align: left;
+  }
+  nav .right .options{
+   text-align: left;
+  }
+  }
+</style>

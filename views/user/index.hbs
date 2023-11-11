@@ -1,0 +1,218 @@
+<style>
+  .main .wrapper{
+    text-align: center;
+    background-color: #101010;
+    padding-top: 3rem;
+
+  }
+  .main .wrapper h2{
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+  }
+  .details {
+    font-size: 12px;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.02);
+    /* IE 9 */
+    -webkit-transform: scale(1.02);
+    /* Safari 3-8 */
+    transform: scale(1.02);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8)
+  }
+
+  .card {
+   width: 10rem;
+    height: 10rem;
+    border-radius: 83px;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .img {
+    height: 5rem;
+    width: 4rem;
+  }
+
+  .name {
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: ;
+  }
+  .boxes{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    padding-bottom: 5rem;
+
+  }
+footer{
+  color: white;
+    padding-top: 4rem;
+    background-color: black;
+  }
+  .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright img{
+        width: 6.3rem;
+    padding-left: 6px;
+  }
+    @media (min-width:768px) {
+    .name {
+      margin: auto;
+      text-decoration: none;
+      font-size: larger;
+    }
+  }
+    .card-body {
+          padding: 7px;
+  }
+   @media screen and (max-width: 768px) {
+    .boxes{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  }
+   @media screen and (max-width: 518px) {
+    .boxes{
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+  }
+   @media screen and (max-width: 425px) {
+    .boxes{
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card {
+   width: 8rem;
+    height: 8rem;
+   
+  }
+ .img {
+    width: 4rem;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+    .main .wrapper h2{
+    font-size: 30px;
+  }
+  }
+</style>
+
+<div class="main" id="products">
+  <div class="wrapper">
+    <h2>Categories</h2>
+    <div class="boxes">
+      {{#each values}}
+        <a class="box" href="/products/{{this}}" style="text-decoration: none; color: black;">
+          <div class="card mb-4 zoom ">
+            <img class="img card-img-top " src="/images/{{this}}.jpg" alt="Card image cap">
+            <div class="card-body ">
+              <h5 class="name card-title">{{this}}</h5>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="" id="contact">
+
+  <!-- Footer -->
+  <footer  >
+    
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start ">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Swiftcart</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: 00a5ba; height: 2px" />
+            <p>
+              The store which makes your cart max without makes your purse empty.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: 00a5ba; height: 2px" />
+            <p>
+              <a href="/products/Mobiles" class="text-white">Mobile Phones</a>
+            </p>
+            <p>
+              <a href="/products/Appliances" class="text-white">Home Appliances</a>
+            </p>
+            <p>
+              <a href="/products/Fashion" class="text-white">Fashion</a>
+            </p>
+            <p>
+              <a href="/products/Sports" class="text-white">Sports</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: 00a5ba; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i>India,Kerela </p>
+            <p><i class="fas fa-envelope mr-3"></i>Swiftcart@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>9898989898</p>
+            
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="copyright p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      &copy;
+      <script type="text/javascript">
+        var today = new Date()
+        var year = today.getFullYear()
+        document.write(year)
+      </script>
+      <a class="text-white"><img src="images/logo.jpg" alt=""></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+<!-- End of .container -->
+<script>
+
+</script>
+
