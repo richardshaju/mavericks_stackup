@@ -33,7 +33,9 @@ mavericks-
 ## Link to product walkthrough
 Product Walkthrough : [Click here](https://drive.google.com/file/d/1ZhX1VL5089ol7eMhRWLXnpBqufFCvfqS/view?usp=sharing)
 ## How it Works ?
-Here is the video explaining the code of the project : [click here](https://drive.google.com/file/d/1OEx9IDKQgomb0w-tRU6TYfyWxHvDK93f/view?usp=sharing)
+Here is the video explaining the code of the project : [click here](https://drive.google.com/file/d/1OEx9IDKQgomb0w-tRU6TYfyWxHvDK93f/view?usp=sharing)  
+Explanation of Team member_2 : [Karthik S](https://drive.google.com/file/d/1soiqhy08QVwJnlFNK0ODj654_VH8XSXQ/view?usp=sharing)  
+Explanation of Team member_3 : [V Gopalakrishnan]()
 ## Libraries used
 bcrypt: ^5.0.1,<br>
 cookie-parser: ~1.4.4,<br>
