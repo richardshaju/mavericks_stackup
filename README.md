@@ -35,9 +35,39 @@ Product Walkthrough : [Click here](https://drive.google.com/file/d/1ZhX1VL5089ol
 ## How it Works ?
 Here is the video explaining the code of the project : [click here](https://drive.google.com/file/d/1OEx9IDKQgomb0w-tRU6TYfyWxHvDK93f/view?usp=sharing)
 ## Libraries used
-Library Name - Version
+bcrypt: ^5.0.1,<br>
+cookie-parser: ~1.4.4,<br>
+cookie-session: ^2.0.0,<br>
+debug: ~2.6.9,<br>
+dotenv: ^16.0.1,<br>
+express: ~4.16.1,<br>
+express-handlebars: ^6.0.6,<br>
+express-session: ^1.17.3,<br>
+handlebars: ^4.7.7,<br>
+hbs: ^4.2.0,<br>
+http-errors: ~1.6.3,<br>
+mongodb: ^4.12.1,<br>
+razorpay: ^2.8.2<br>
+    
 ## How to configure
-Instructions for setting up project
+1. Clone the repository:
+ 
+    ```bash
+    git clone <repository-url>
+    cd <project-directory>
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
 ## How to Run
-Instructions for running
+1. Run the application:
+
+    ```bash
+    npm start
+    ```
+
+2. Open your web browser and visit [http://localhost:3000](http://localhost:3000).
 
