@@ -1,7 +1,7 @@
 ![StackUp Banner](https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg)
 # E-Commerce Platform with Node.js
 
-Welcome to our cutting-edge E-Commerce web application, where innovation meets seamless functionality. Our project boasts a robust and efficient architecture that brings together the best of Node.js for the backend, MongoDB for the database, and Handlebars for the frontend, creating a powerful and dynamic online shopping experience.
+Welcome to our cutting-edge E-Commerce web application, where innovation meets seamless functionality. Our project boasts a robust and efficient architecture that brings together the best of Node.js for the backend, MongoDB for the database, and Handlebars for the frontend, creating a powerful and dynamic online shopping experience.<br> Live link : https://mavericksstackup-production.up.railway.app/
 
 ## Key Features
 
