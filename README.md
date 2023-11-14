@@ -1,4 +1,4 @@
-![StackUp Banner](https://v5.airtableusercontent.com/v2/22/22/1699027200000/ArXFSY-xSOH8fZOwFM4jDg/3GRwwipT9F8XsD2iivnexRi9lVRgvIj1MS5Tw4Mm1Vy-JsK8W1Yy4sFB79YJMWPjZNjgfHI9TJfQY1sx3041vZ2EnxkAyknrxR3pG_h9CxVQwh9PhAjOrA8ujVcp5tqnSVfmcQPlEwovlJvFFF-NXQ/eMDdtS3Z9zkGkexNaC-64FCLnAIa0xtT8xjJKSJo66w)
+![StackUp Banner](https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg)
 # E-Commerce Platform with Node.js
 
 Welcome to our cutting-edge E-Commerce web application, where innovation meets seamless functionality. Our project boasts a robust and efficient architecture that brings together the best of Node.js for the backend, MongoDB for the database, and Handlebars for the frontend, creating a powerful and dynamic online shopping experience.
